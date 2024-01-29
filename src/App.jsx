@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="app font-poppins scroll-smooth w-full">
-      <header className='relative p-4 lg:static lg:flex lg:justify-between lg:items-center lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-6xl header'>
+      <header className='relative p-4 lg:flex lg:justify-between lg:items-center lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-6xl header'>
         <div className='flex justify-between items-center lg:items-start'>
             <img src="/images/Vector.svg" alt=""  className='lg:w-16 w-12'/>
             <button onClick={handleToggleNav} className='cursor-pointer lg:hidden outline-0 border-[0px]'> 
@@ -31,12 +31,12 @@ function App() {
             <li><a href="#features">Features</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-            <div className='flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-6 text-center sm:hidden'>
+            <div className='flex flex-col mt-10 w-full items-center gap-6 text-center lg:hidden'>
             <a href="#" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</a>
             <a href="#" className='rounded-md p-2 w-32 login'>Login</a>
           </div>
         </nav>
-        <div className='lg:flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-6 text-center hidden'>
+        <div className='lg:flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-4 text-center hidden'>
           <a href="#" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</a>
           <a href="#" className='rounded-md p-2 w-32 login'>Login</a>
         </div>
