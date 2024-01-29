@@ -43,7 +43,7 @@ function App() {
       </header>
 
       <main className='flex flex-col'>
-        <section className='intro flex flex-col justify-center items-center text-center p-4 mt-16 lg:grid lg:grid-cols-2 lg:px-16 lg:text-start lg:items-start lg:mt-16 lg:mx-auto lg:max-w-6xl w-full lg:justify-between'>
+        <section className='intro flex flex-col justify-center items-center text-center p-4 mt-16 lg:grid lg:grid-cols-2 lg:px-16 lg:text-start lg:items-center lg:mt-16 lg:mx-auto lg:max-w-6xl w-full lg:justify-between'>
           <img src="/images/hero-img.png" alt="Avatar" className='mx-auto lg:hidden' />
           <img src="/images/hero-desktop.png" alt="Avatar" className='hidden lg:flex order-1'/>
           
