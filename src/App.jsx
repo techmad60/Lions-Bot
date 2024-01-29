@@ -98,7 +98,7 @@ function App() {
 
         <section className='testimonials flex flex-col justify-center items-center bg-mobile-testimonials bg-no-repeat text-center pb-20  md:bg-desktop-testimonials lg:bg-desktop-testimonials' id='testimonials'>
           <h2 className='text-white text-[20px] leading-normal font-semibold py-6 text-center mx-auto md:py-3 lg:pt-8'>Our Testimonials</h2>
-          <div className='lg:grid lg:grid-cols-3 lg:mx-auto lg:max-w-6xl lg:mt-48 lg:pb-24'>
+          <div className='lg:grid lg:grid-cols-3 lg:mx-auto lg:max-w-6xl lg:mt-44 lg:pb-24'>
             <article className='flex flex-col justify-center items-center mt-36 md:mt-12 lg:mt-0'>
               <img src="/images/Avatar.png" alt="" className='w-[70px] h-[70px]'/>
               <p className='text-xs px-16 pt-4 md:px-48 lg:px-16'><span className='font-style-script text-[48px]'>“</span>The chatbot made solving portal issues a breeze! Quick responses and effective solutions saved me a lot of time.</p>
