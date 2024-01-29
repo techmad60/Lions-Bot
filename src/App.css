@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+a {
+  list-style: none;
+  text-decoration: none;
+};
+
+
+button {
+  outline: none;
+}
+.features {
+    position: relative;
+  
+  
+  }
+  .features::before {
+    content: '';
+    background: url('/images/bg-mobile-features.svg');
+    position: absolute;
+    z-index: -1; 
+    height: 1080px;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .open {
+    display: flex;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  .login {
+    border: 1px solid #176729;
+  }
+
+   @media screen and (min-width: 1024px) {
+    header {
+      max-width: 72rem;
+    }
+    
+    .features::before {
+      content: '';
+      background-image: url('/images/bg-desktop-features.svg') ;
+      height: 700px;
+      z-index: -1;
+      width: 100%;
+      position: absolute;
+      background-repeat: no-repeat
+    };
+  }; 
+  
