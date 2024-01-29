@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div className="app font-poppins grid place-content-center grid-cols-1 scroll-smooth w-full">
+    <div className="app font-poppins scroll-smooth w-full">
       <header className='relative p-4 lg:static lg:flex lg:justify-between lg:items-center lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-6xl header'>
         <div className='flex justify-between items-center lg:items-start'>
             <img src="/images/Vector.svg" alt=""  className='lg:w-16 w-12'/>
