@@ -38,7 +38,7 @@ button {
 
    @media screen and (min-width: 1024px) {
     .header {
-      max-width: 72rem;
+      width: 72rem;
     }
     
     .features::before {

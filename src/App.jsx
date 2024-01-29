@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="app font-poppins grid place-content-center grid-cols-1 scroll-smooth overflow-hidden w-full">
-      <header className='relative p-4 lg:static lg:flex lg:justify-evenly lg:items-center lg:w-full lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-6xl header'>
+      <header className='relative p-4 lg:static lg:flex lg:justify-between lg:items-center lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-6xl header'>
         <div className='flex justify-between items-center lg:items-start'>
             <img src="/images/Vector.svg" alt=""  className='lg:w-16 w-12'/>
             <button onClick={handleToggleNav} className='cursor-pointer lg:hidden outline-0 border-[0px]'> 
