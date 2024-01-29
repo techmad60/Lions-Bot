@@ -69,7 +69,7 @@ function App() {
               
               <h3 className='text-base font-semibold pt-3'>Instant Problem Resolution</h3>
 
-              <p className='text-xs px-10 md:px-40 lg:px-0'>Resolve portal-related issues instantly with our chatbot's AI-powered solutions.</p>
+              <p className='text-xs px-10 md:px-40 lg:px-10'>Resolve portal-related issues instantly with our chatbot's AI-powered solutions.</p>
             </article>
             <article className='flex flex-col justify-center items-center pt-12'>
               <img src="/images/icon-2.svg" alt="" className='w-[50px] h-[50px]'/>
