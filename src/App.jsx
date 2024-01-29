@@ -48,7 +48,7 @@ function App() {
           <img src="/images/hero-desktop.png" alt="Avatar" className='mx-auto hidden lg:flex order-1 w-96'/>
           
           <div className='lg:flex flex-col justify-between'>
-            <h1 className='text-2xl mt-20 leading-normal font-bold lg:mt-4'> Welcome to <span className='text-primary-green'>Lion’s Bot! </span><br />
+            <h1 className='text-2xl mt-20 leading-normal font-bold lg:mt-4'> Welcome to <span className='text-primary-green'>Lions Bot! </span><br />
             Your Personalized Student Portal Assistant!</h1>
 
             <p className='leading-normal font-normal mt-7 text-sm lg:pr-20'>
@@ -69,28 +69,28 @@ function App() {
               
               <h3 className='text-base font-semibold pt-3'>Instant Problem Resolution</h3>
 
-              <p className='text-sm px-12'>Resolve portal-related issues instantly with our chatbot's AI-powered solutions.</p>
+              <p className='text-sm px-10'>Resolve portal-related issues instantly with our chatbot's AI-powered solutions.</p>
             </article>
             <article className='flex flex-col justify-center items-center pt-12'>
               <img src="/images/icon-2.svg" alt="" className='w-[50px] h-[50px]'/>
               
               <h3 className='text-base font-semibold pt-3'>Personalized Assistance</h3>
 
-              <p className='text-sm px-12'>Enjoy tailored support as our chatbot understands and addresses individual student needs.</p>
+              <p className='text-sm px-10'>Enjoy tailored support as our chatbot understands and addresses individual student needs.</p>
             </article>
             <article className='flex flex-col justify-center items-center pt-12'>
               <img src="/images/icon-3.svg" alt="" className='w-[50px] h-[50px]'/>
               
               <h3 className='text-base font-semibold pt-3'>User-Friendly Interface</h3>
 
-              <p className='text-sm px-12'>Navigate the chatbot effortlessly with a user-friendly interface, making interactions seamless.</p>
+              <p className='text-sm px-10'>Navigate the chatbot effortlessly with a user-friendly interface, making interactions seamless.</p>
             </article>
             <article className='flex flex-col justify-center items-center pt-12'>
               <img src="/images/icon-4.svg" alt="" className='w-[50px] h-[50px]'/>
               
               <h3 className='text-base font-semibold pt-3'>24/7 Availability</h3>
 
-              <p className='text-sm px-12'>Access assistance anytime, anywhere – our chatbot is available 24/7 to cater to your queries.</p>
+              <p className='text-sm px-10'>Access assistance anytime, anywhere – our chatbot is available 24/7 to cater to your queries.</p>
             </article>
           </div>
           
