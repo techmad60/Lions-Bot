@@ -43,9 +43,9 @@ function App() {
       </header>
 
       <main className='flex flex-col'>
-        <section className='intro flex flex-col justify-center items-center text-center p-4 mt-16 lg:grid lg:grid-cols-2 lg:px-16 lg:text-start lg:items-center lg:mt-16 lg:mx-auto lg:max-w-6xl w-full lg:justify-between'>
+        <section className='intro flex flex-col justify-center items-center text-center p-4 mt-16 lg:flex-row lg:px-16 lg:text-start lg:items-start lg:mt-16 lg:mx-auto lg:max-w-6xl'>
           <img src="/images/hero-img.png" alt="Avatar" className='mx-auto lg:hidden' />
-          <img src="/images/hero-desktop.png" alt="Avatar" className='hidden lg:flex order-1'/>
+          <img src="/images/hero-desktop.png" alt="Avatar" className='mx-auto hidden lg:flex order-1 w-96'/>
           
           <div className='lg:flex flex-col justify-between'>
             <h1 className='text-2xl mt-20 leading-normal font-bold lg:mt-4'> Welcome to <span className='text-primary-green'>Lion’s Bot! </span><br />
