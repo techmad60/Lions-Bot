@@ -24,7 +24,6 @@ function App() {
       body.style.overflow = 'visible';
       html.style.overflow = 'visible';
     }
-    console.log('Effect ran with isNavOpen:', isNavOpen);
     // Clean up the effect on component unmount
     return () => {
       body.style.overflow = 'visible';
@@ -33,7 +32,7 @@ function App() {
   }, [isNavOpen]);
 
   return (
-    <div className="app font-poppins scroll-smooth w-full">
+    <div className="app font-poppins scroll-smooth w-full" id='home'>
       <Header handleToggleNav={handleToggleNav} isNavOpen={isNavOpen}/>
       <Main />
       <Footer/>
