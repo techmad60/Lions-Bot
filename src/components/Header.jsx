@@ -1,0 +1,65 @@
+import React from 'react'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
+const Header = ({handleToggleNav, isNavOpen}) => {
+  return (
+    <header className='relative p-4 md:p-8 lg:flex lg:justify-between lg:items-center lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-5xl header'>
+    <div className='flex justify-between items-center lg:items-start'>
+        <img src="/images/Vector.svg" alt=""  className='lg:w-16 w-12'/>
+        <button onClick={handleToggleNav} className='cursor-pointer lg:hidden outline-0 border-[0px]'> 
+          <img src="/images/Hamburger.svg" alt="Hamburger-icon" className='w-8'/>
+        </button>
+    </div>
+    {isNavOpen && (
+        <div
+          className="fixed top-0 left-0 w-[25vw] md:w-1/2 min-h-screen bg-black opacity-50 z-50"
+          onClick={handleToggleNav} // Close the navbar when clicking on the overlay
+        />
+      )}
+    <nav
+      aria-label='nav-header'
+      className={`absolute top-0 right-0 bg-white flex flex-col min-h-screen w-3/4 items-center  pt-4 transition-all duration-300 ease-in-out ${isNavOpen ? 'fixed' : 'transform translate-x-full opacity-0'} lg:flex lg:flex-row lg:static lg:min-h-full lg:justify-evenly lg:w-full lg:pt-0 flex-grow z-50`}
+    >
+      <button onClick={handleToggleNav} className='w-8 mb-6 lg:hidden outline-0 border-[0px]'>
+        <img src="/images/close-btn.svg" alt="Close-btn" className='w-8'/>
+      </button>
+      <ul className='leading-[4rem] lg:flex gap-[33px] mt-16 text-center text-xl'>
+        <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green'>
+          <ScrollLink
+            to='#'
+            smooth={true} 
+            duration={300}>
+            Home
+          </ScrollLink>
+        </li>
+        <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green'>
+          <ScrollLink
+            to='features'
+            smooth={true} 
+            duration={300}>
+            Features
+          </ScrollLink>
+        </li>
+        <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green'>
+        <ScrollLink
+            to='contact'
+            smooth={true} 
+            duration={400}>
+            Contact
+          </ScrollLink>
+        </li>
+      </ul>
+        <div className='flex flex-col mt-16 w-full items-center  text-center lg:hidden'>
+        <a href="#" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</a>
+        <a href="#" className='rounded-md p-2 w-32 login'>Login</a>
+      </div>
+    </nav>
+    <div className='lg:flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-4 text-center hidden'>
+      <a href="#" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</a>
+      <a href="#" className='rounded-md p-2 w-32 login'>Login</a>
+    </div>
+  </header>
+  )
+}
+
+export default Header
