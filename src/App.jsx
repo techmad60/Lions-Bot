@@ -137,7 +137,7 @@ function App() {
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <ul className='flex justify-self-end items-center justify-around w-full pt-24 lg:mx-auto lg:w-64 
+          <ul className='flex justify-self-end items-center justify-around w-full pt-24 md:w-56 lg:mx-auto lg:w-64 
           ' id='contact'> 
             <li><a href="#"><img src="/images/X.svg" alt="" /></a></li>
             <li><a href="#"><img src="/images/linkedin.svg" alt="" /></a></li>
