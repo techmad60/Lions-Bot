@@ -10,14 +10,14 @@ function App() {
   };
 
   return (
-    <div className="app font-poppins grid place-content-center grid-cols-1 scroll-smooth overflow-hidden">
+    <div className="app font-poppins grid place-content-center grid-cols-1 scroll-smooth overflow-hidden w-full">
       <header className='relative p-4 lg:static lg:flex lg:justify-evenly lg:items-center lg:w-full lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-6xl'>
         <div className='flex justify-between items-center lg:items-start'>
             <img src="/images/Vector.svg" alt=""  className='lg:w-16 w-12'/>
             <button onClick={handleToggleNav} className='cursor-pointer lg:hidden outline-0 border-[0px]'> 
               <img src="/images/Hamburger.svg" alt="Hamburger-icon" className='w-12'/>
             </button>
-          </div>
+        </div>
       
         <nav
           aria-label='nav-header'
