@@ -38,7 +38,7 @@ function App() {
         </nav>
         <div className='lg:flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-6 text-center hidden'>
           <a href="#" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</a>
-          <a href="#" className='border border-primary-green rounded-md p-2 w-32 '>Login</a>
+          <a href="#" className='rounded-md p-2 w-32 login'>Login</a>
         </div>
       </header>
 
