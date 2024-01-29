@@ -36,12 +36,20 @@ button {
     border: 1px solid #176729;
   }
 
+   @media screen and (min-width: 768px) {
+
+    .features::before {
+      content: '';
+      background-image: url('/images/bg-desktop-features.svg') ;
+      height: 950px;
+      z-index: -1;
+      width: 100%;
+      position: absolute;
+      background-repeat: no-repeat
+    };
+  }; 
    @media screen and (min-width: 1024px) {
 
-    .header, .intro {
-      max-width: 72rem;
-    }
-    
     .features::before {
       content: '';
       background-image: url('/images/bg-desktop-features.svg') ;
