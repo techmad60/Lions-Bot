@@ -37,7 +37,7 @@ button {
   }
 
    @media screen and (min-width: 1024px) {
-    header {
+    .header {
       max-width: 72rem;
     }
     
