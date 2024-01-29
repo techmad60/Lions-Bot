@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div className="app font-poppins grid place-content-center grid-cols-1 scroll-smooth overflow-hidden w-full">
+    <div className="app font-poppins grid place-content-center grid-cols-1 scroll-smooth w-full">
       <header className='relative p-4 lg:static lg:flex lg:justify-between lg:items-center lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-6xl header'>
         <div className='flex justify-between items-center lg:items-start'>
             <img src="/images/Vector.svg" alt=""  className='lg:w-16 w-12'/>
@@ -42,7 +42,7 @@ function App() {
         </div>
       </header>
 
-      <main className='flex flex-col w-full'>
+      <main className='flex flex-col'>
         <section className='intro flex flex-col justify-center items-center text-center p-4 mt-16 lg:flex-row lg:px-16 lg:text-start lg:items-start lg:mt-16 lg:mx-auto lg:max-w-6xl'>
           <img src="/images/hero-img.png" alt="Avatar" className='mx-auto lg:hidden' />
           <img src="/images/hero-desktop.png" alt="Avatar" className='mx-auto hidden lg:flex order-1 w-96'/>
