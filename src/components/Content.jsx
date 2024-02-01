@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Main = () => {
+const Content = () => {
   return (
     <main className='flex flex-col'>
         <section className='intro flex flex-col justify-center items-center text-center p-4 mt-16 lg:flex-row lg:px-16 lg:text-start lg:items-start lg:mt-16 lg:mx-auto lg:max-w-5xl'>
@@ -90,4 +90,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Content;

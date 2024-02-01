@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import './App.css';
+import Header from '../components/Header';
+import Content from '../components/Content';
+import Footer from '../components/Footer';
+import '../App.css';
 
 
-function App() {
+function HomePage() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleToggleNav = () => {
@@ -34,10 +34,10 @@ function App() {
   return (
     <div className="app font-poppins scroll-smooth w-full" id='home'>
       <Header handleToggleNav={handleToggleNav} isNavOpen={isNavOpen}/>
-      <Main />
+      <Content />
       <Footer/>
     </div>
   );
 };
 
-export default App;
+export default HomePage;

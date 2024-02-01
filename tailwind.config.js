@@ -26,6 +26,7 @@ export default {
     colors: {
       'primary-green': "#176729",
       'primary-grey': "#D9D9D9;",
+      'secondary-grey': "rgba(0, 0, 0, 0.2)"
     },
    },
   },

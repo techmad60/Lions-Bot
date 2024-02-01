@@ -38,6 +38,36 @@ button {
   .login {
     border: 1px solid #176729;
   }
+  .signup {
+    position: relative;
+  }
+  .signup {
+    position: relative;
+  }
+  
+  .signup::before {
+    content: '';
+    height: 20vh;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    top: 38vh;
+    background-image: url('/images/bg-mobile-signup.svg') ;
+    background-repeat: no-repeat;
+    /* background-color: red;  */
+  }
+  
+  .signup::after {
+    content: '';
+    background-color: #176729;
+    height: 50vh;
+    z-index: -2;
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+  }
+  
+
 
    @media screen and (min-width: 768px) {
 
