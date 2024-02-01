@@ -53,8 +53,8 @@ const Header = ({handleToggleNav, isNavOpen}) => {
         </li>
       </ul>
         <div className='flex flex-col mt-16 w-full items-center  text-center lg:hidden'>
-        <a href="./signup" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</a>
-        <a href="./login" className='rounded-md p-2 w-32 login'>Login</a>
+        <a href="/signup" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</a>
+        <a href="/login" className='rounded-md p-2 w-32 login'>Login</a>
       </div>
     </nav>
 
