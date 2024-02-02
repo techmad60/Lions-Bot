@@ -55,7 +55,6 @@ button {
     top: 38vh;
     background-image: url('/images/bg-mobile-signup.svg') ;
     background-repeat: no-repeat;
-    /* background-color: red;  */
   }
   
   .signup::after {
@@ -68,9 +67,33 @@ button {
     top: 50vh;
   }
   
+  @media screen and (min-width: 768px) {
 
+    .signup::before {
+      content: '';
+      background-image: url('/images/bg-desktop-signup.svg') ;
+      z-index: -1;
+      top: 42vh;
+      width: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+      /* background-color: red */
+    };
+  }; 
+  @media screen and (min-width: 1024px) {
 
-   @media screen and (min-width: 768px) {
+    .signup::before {
+      content: '';
+      background-image: url('/images/bg-desktop-signup.svg') ;
+      z-index: -1;
+      top: 45vh;
+      width: 100%;
+      position: absolute;
+      background-repeat: no-repeat;
+    };
+  }; 
+
+  @media screen and (min-width: 768px) {
 
     .features::before {
       content: '';

@@ -6,20 +6,22 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
-    <div className='signup flex justify-center flex-col items-center font-poppins min-h-screen'>
+    <div className='signup flex justify-center flex-col items-center font-poppins min-h-screen lg:bg-secondary-grey o'>
      
-      <div className='form-container bg-secondary-grey w-[332px] h-[620px]  flex flex-col justify-start items-center rounded-[40px] self-center justify-self-center'>
-        <img src="../images/signup.png" alt="Signup illustration" className='my-[32px]'/>
-        <p className='text-white stroke-secondary-grey font-semibold text-[36px]'>Login</p>
+      <div className='form-container bg-secondary-grey w-[332px] h-[620px]  flex flex-col justify-start items-center rounded-[40px] self-center justify-self-center md:w-[600px] lg:pb-4 lg:h-full'>
+      
 
-        <form className='flex flex-col justify-center items-center'>
-          <input type="email" id="email" name="email" placeholder="Email" required  className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black mt-5 outline-none'/>
+        <form className='flex flex-col justify-start items-center  lg:w-full lg:rounded-3xl lg:my-4'>
+        <img src="../images/login.png" alt="Signup illustration" className='my-[32px] lg:my-[2px]'/>
+          <p className='text-white stroke-secondary-grey font-semibold text-[36px]'>Login</p>
+          <input type="email" id="email" name="email" placeholder="Email" required  className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black mt-5 outline-none md:w-[270px]'/>
 
           <Input />
 
-          <button type="submit" className='bg-primary-green p-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px] border-none'>Login</button>
+          <button type="submit" className='bg-primary-green p-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px] border-none md:w-[228px]'>Login</button>
+          <p className='text-white pt-5'>Or <Link to={`/signup`}><span className='text-green-300'>Signup!</span></Link></p>
         </form>
-        <p className='text-white pt-5'>Or <Link to={`/signup`}><span className='text-cyan-300'>Signup!</span></Link></p>
+       
       </div>
     </div>
   );
