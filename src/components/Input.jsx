@@ -16,7 +16,7 @@ const Input = () => {
               name="password"
               placeholder="Password"
               required
-              className='p-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-6'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-6'
             />
             <span
               className="password-toggle absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"

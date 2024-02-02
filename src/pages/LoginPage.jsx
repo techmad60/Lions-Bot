@@ -18,7 +18,7 @@ const Login = () => {
 
           <Input />
 
-          <button type="submit" className='bg-primary-green pl-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px]'>Login</button>
+          <button type="submit" className='bg-primary-green border-none p-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px]'>Login</button>
         </form>
       </div>
     </div>

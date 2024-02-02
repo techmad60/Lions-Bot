@@ -17,7 +17,7 @@ const Signup = () => {
 
           <Input />
 
-          <button type="submit" className='bg-primary-green p-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px]'>Sign up</button>
+          <button type="submit" className='bg-primary-green p-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px] border-none'>Sign up</button>
         </form>
       </div>
     </div>
