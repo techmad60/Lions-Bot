@@ -55,8 +55,8 @@ const Header = ({handleToggleNav, isNavOpen}) => {
       </ul>
 
       <div className='flex flex-col mt-16 w-full items-center text-center lg:hidden'>
-       <Link to="/signup" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0'>Sign up</Link>
-        <Link to="/login" className='rounded-md p-2 w-32 login'>Login</Link>
+       <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0'>Sign up</Link>
+        <Link to={`/login`} className='rounded-md p-2 w-32 login'>Login</Link>
       </div>
     </nav>
 
@@ -90,8 +90,8 @@ const Header = ({handleToggleNav, isNavOpen}) => {
     </nav>
 
     <div className='lg:flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-4 text-center hidden'>
-      <Link to="/signup" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</Link>
-      <Link to="/login" className='rounded-md p-2 w-32 login'>Login</Link>
+      <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</Link>
+      <Link to={`/login`} className='rounded-md p-2 w-32 login'>Login</Link>
     </div>
   </header>
   );
