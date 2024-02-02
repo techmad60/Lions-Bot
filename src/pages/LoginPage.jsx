@@ -14,11 +14,11 @@ const Login = () => {
         <p className='text-white stroke-secondary-grey font-semibold text-[36px] py-4'>Login</p>
 
         <form className='flex flex-col justify-center items-center'>
-          <input type="email" id="email" name="email" placeholder="Email" required  className='p-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-6'/>
+          <input type="email" id="email" name="email" placeholder="Email" required  className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-6'/>
 
           <Input />
 
-          <button type="submit" className='bg-primary-green p-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px]'>Login</button>
+          <button type="submit" className='bg-primary-green pl-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px]'>Login</button>
         </form>
       </div>
     </div>

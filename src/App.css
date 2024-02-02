@@ -12,6 +12,7 @@ a {
 
 button {
   outline: none;
+  border: none;
 }
 .features {
     position: relative;
