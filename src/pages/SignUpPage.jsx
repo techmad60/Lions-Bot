@@ -13,7 +13,7 @@ const Signup = () => {
         <p className='text-white stroke-secondary-grey font-semibold text-[36px] py-4'>Sign up</p>
 
         <form className='flex flex-col justify-center items-center'>
-          <input type="email" id="email" name="email" placeholder="Email" required  className='p-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-6'/>
+          <input type="email" id="email" name="email" placeholder="Email" required  className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-6'/>
 
           <Input />
 
