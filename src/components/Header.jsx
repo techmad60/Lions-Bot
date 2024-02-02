@@ -14,7 +14,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
     {isNavOpen && (
         <div
           className="fixed top-0 left-0 w-[25vw] md:w-1/2 min-h-screen bg-black opacity-50 z-50"
-          onClick={handleToggleNav} // Close the navbar when clicking on the overlay
+          onClick={handleToggleNav} 
         />
       )}
     <nav
