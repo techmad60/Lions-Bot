@@ -6,14 +6,13 @@ import '../App.css';
 const Signup = () => {
   return (
     <div className='signup flex justify-center flex-col items-center font-poppins min-h-screen'>
-      <img src="../images/Vector.svg" alt="logo" className='mb-4' />
-
-      <div className='form-container bg-secondary-grey w-[332px] h-[688px] flex flex-col justify-start items-center rounded-[40px] self-center justify-self-center'>
+     
+      <div className='form-container bg-secondary-grey w-[332px] h-[620px]  flex flex-col justify-start items-center rounded-[40px] self-center justify-self-center'>
         <img src="../images/signup.png" alt="Signup illustration" className='my-[32px]'/>
-        <p className='text-white stroke-secondary-grey font-semibold text-[36px] py-4'>Sign up</p>
+        <p className='text-white stroke-secondary-grey font-semibold text-[36px]'>Sign up</p>
 
         <form className='flex flex-col justify-center items-center'>
-          <input type="email" id="email" name="email" placeholder="Email" required  className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-6'/>
+          <input type="email" id="email" name="email" placeholder="Email" required  className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black my-5'/>
 
           <Input />
 
