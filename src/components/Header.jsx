@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 const Header = ({handleToggleNav, isNavOpen}) => {
   return (
@@ -24,7 +25,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
         <img src="/images/close-btn.svg" alt="Close-btn" className='w-8'/>
       </button>
       <ul className='leading-[4rem] gap-[33px] mt-16 text-center text-xl'>
-        <li className='hover:text-primary-green transition-all duration-300 ease-in-out '>
+        <li className='hover:text-primary-green transition-all duration-300 ease-in-out cursor-pointer '>
           <ScrollLink
             onClick={() => isNavOpen && handleToggleNav()}
             to='home'
@@ -33,7 +34,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
             Home
           </ScrollLink>
         </li>
-        <li className='hover:text-primary-green transition-all duration-300 ease-in-out '>
+        <li className='hover:text-primary-green transition-all duration-300 ease-in-out cursor-pointer '>
           <ScrollLink
             onClick={() => isNavOpen && handleToggleNav()}
             to='features'
@@ -42,7 +43,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
             Features
           </ScrollLink>
         </li>
-        <li className='hover:text-primary-green transition-all duration-300 ease-in-out '>
+        <li className='hover:text-primary-green transition-all duration-300 ease-in-out cursor-pointer '>
         <ScrollLink
             onClick={() => isNavOpen && handleToggleNav()}
             to='contact'
@@ -53,15 +54,15 @@ const Header = ({handleToggleNav, isNavOpen}) => {
         </li>
       </ul>
 
-      <div className='flex flex-col mt-16 w-full items-center  text-center lg:hidden'>
-       <a href="/signup" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0'>Sign up</a>
-        <a href="/login" className='rounded-md p-2 w-32 login'>Login</a>
+      <div className='flex flex-col mt-16 w-full items-center text-center lg:hidden'>
+       <Link to="/signup" className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0'>Sign up</Link>
+        <Link to="/login" className='rounded-md p-2 w-32 login'>Login</Link>
       </div>
     </nav>
 
     <nav aria-label='nav-header'>
         <ul className='leading-[4rem] lg:flex gap-[33px] text-center hidden'>
-            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green'>
+            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
             <ScrollLink
                 to='#'
                 smooth={true} 
@@ -69,7 +70,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Home
             </ScrollLink>
             </li>
-            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green'>
+            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
             <ScrollLink
                 to='features'
                 smooth={true} 
@@ -77,7 +78,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Features
             </ScrollLink>
             </li>
-            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green'>
+            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
             <ScrollLink
                 to='contact'
                 smooth={true} 
