@@ -62,7 +62,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
 
     <nav aria-label='nav-header'>
         <ul className='leading-[4rem] lg:flex gap-[33px] text-center hidden'>
-            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
             <ScrollLink
                 to='#'
                 smooth={true} 
@@ -70,7 +70,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Home
             </ScrollLink>
             </li>
-            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
             <ScrollLink
                 to='features'
                 smooth={true} 
@@ -78,7 +78,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Features
             </ScrollLink>
             </li>
-            <li className='lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
             <ScrollLink
                 to='contact'
                 smooth={true} 

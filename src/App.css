@@ -42,9 +42,9 @@ button {
   .signup {
     position: relative;
   }
-  .signup {
-    position: relative;
-  }
+  .nav-desktop:hover {
+    border-bottom: 1px solid #176729
+  };
   
   .signup::before {
     content: '';
