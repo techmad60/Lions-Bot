@@ -62,7 +62,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
 
     <nav aria-label='nav-header'>
         <ul className='leading-[4rem] lg:flex gap-[33px] text-center hidden'>
-            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer'>
             <ScrollLink
                 to='#'
                 smooth={true} 
@@ -70,7 +70,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Home
             </ScrollLink>
             </li>
-            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer'>
             <ScrollLink
                 to='features'
                 smooth={true} 
@@ -78,7 +78,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Features
             </ScrollLink>
             </li>
-            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out lg:hover:border-b border-b-primary-green cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer  hover:bg-green-600'>
             <ScrollLink
                 to='contact'
                 smooth={true} 
@@ -90,8 +90,8 @@ const Header = ({handleToggleNav, isNavOpen}) => {
     </nav>
 
     <div className='lg:flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-4 text-center hidden'>
-      <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 '>Sign up</Link>
-      <Link to={`/login`} className='rounded-md p-2 w-32 login'>Login</Link>
+      <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 hover:bg-green-400 active:translate-y-4 transition-all duration-300 ease-in-out'>Sign up</Link>
+      <Link to={`/login`} className='transition-all duration-300 rounded-md p-2 w-32 login active:translate-x-4'>Login</Link>
     </div>
   </header>
   );

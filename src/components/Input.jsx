@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
-const Input = () => {
+const Input = ({handleChange}) => {
     const [showPassword, setShowPassword] = useState(false);
 
     const togglePassword = () => {
@@ -16,7 +16,9 @@ const Input = () => {
               name="password"
               placeholder="Password"
               required
-              className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black mt-6 mb-4 md:w-[270px]'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black mt-6 mb-1 md:w-[270px]'
+              onChange={handleChange}
+
             />
             <span
               className="password-toggle absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
