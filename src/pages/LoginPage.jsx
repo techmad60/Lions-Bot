@@ -49,7 +49,12 @@ const Login = () => {
       if (error) throw error
       console.log(data);
       setToken(data)
-      window.location.href = 'https://tailwindcss.com/';
+      if (token) {
+        window.location.href = 'https://tailwindcss.com/';
+
+       
+      };
+      
       
     } catch (error) {
       alert(error)
