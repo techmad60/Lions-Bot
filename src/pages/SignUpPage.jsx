@@ -39,7 +39,7 @@ const Signup = () => {
       )
       if (error) throw error
       alert('Check your email for verification link');
-      window.location.href = 'https://tailwindcss.com/';
+      // window.location.href = 'https://tailwindcss.com/';
 
       
     } catch (error) {
