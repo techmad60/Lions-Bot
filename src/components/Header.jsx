@@ -6,7 +6,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
   return (
     <header className='relative p-4 md:p-8 lg:flex lg:justify-between lg:items-center lg:pt-8 lg:px-16 lg:mx-auto lg:max-w-5xl header'>
     <div className='flex justify-between items-center lg:items-start'>
-        <img src="/images/Vector.svg" alt=""  className='lg:w-16 w-12'/>
+        <img src="/images/Vector.svg" alt=""  className='w-12'/>
         <button onClick={handleToggleNav} className='cursor-pointer lg:hidden outline-0 border-[0px]'> 
           <img src="/images/Hamburger.svg" alt="Hamburger-icon" className='w-8'/>
         </button>
@@ -78,7 +78,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Features
             </ScrollLink>
             </li>
-            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer  hover:bg-green-600'>
+            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer'>
             <ScrollLink
                 to='contact'
                 smooth={true} 
