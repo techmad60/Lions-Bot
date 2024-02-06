@@ -32,6 +32,9 @@ const Signup = () => {
         {
           email: formData.email,
           password: formData.password,
+          options: {
+            redirectTo: 'https://tailwindcss.com/'
+          },
         }
       )
       if (error) throw error

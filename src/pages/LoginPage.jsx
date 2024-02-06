@@ -35,15 +35,19 @@ const Login = () => {
 
     });
   };
+ 
 
   async function handleSubmit(e){
     e.preventDefault()
 
     try {
-      const { data, error } = await supabase.auth.signUp(
+      const { data, error } = await supabase.auth.signInWithPassword(
         {
           email: formData.email,
           password: formData.password,
+          options: {
+          redirectTo: 'https://tailwindcss.com/',
+          },
         }
       )
       if (error) throw error
