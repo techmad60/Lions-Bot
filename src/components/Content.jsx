@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Content = () => {
   return (
@@ -15,7 +16,14 @@ const Content = () => {
             Empowering students with instant support, our chatbot streamlines interactions with the school portal. Experience efficient problem-solving and personalized assistance.
             </p>
 
-            <button className='h-[49px] w-[218px] bg-primary-green text-center text-white rounded-[10px] mt-8 lg:mt-20 outline-0 border-[0px]' id='success'>Get Started</button>
+            <Link
+              to="/signup"
+              className="flex justify-center items-center  h-[49px] w-[218px] bg-primary-green text-center text-white rounded-[10px] mt-8 lg:mt-20 outline-0 border-[0px] hover:bg-green-400 active:translate-y-4 transition-all duration-300 ease-in-out mx-auto lg:mx-0"
+              id="success"
+            >
+              Get Started
+            </Link>
+
           </div>
 
         </section>

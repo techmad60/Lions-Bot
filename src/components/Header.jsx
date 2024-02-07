@@ -25,7 +25,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
         <img src="/images/close-btn.svg" alt="Close-btn" className='w-8'/>
       </button>
       <ul className='leading-[4rem] gap-[33px] mt-16 text-center text-xl'>
-        <li className='hover:text-primary-green transition-all duration-300 ease-in-out cursor-pointer '>
+        <li className='hover:text-green-500 transition-all duration-300 ease-in-out cursor-pointer '>
           <ScrollLink
             onClick={() => isNavOpen && handleToggleNav()}
             to='home'
@@ -34,7 +34,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
             Home
           </ScrollLink>
         </li>
-        <li className='hover:text-primary-green transition-all duration-300 ease-in-out cursor-pointer '>
+        <li className='hover:text-green-500 transition-all duration-300 ease-in-out cursor-pointer '>
           <ScrollLink
             onClick={() => isNavOpen && handleToggleNav()}
             to='features'
@@ -43,7 +43,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
             Features
           </ScrollLink>
         </li>
-        <li className='hover:text-primary-green transition-all duration-300 ease-in-out cursor-pointer '>
+        <li className='hover:text-green-500 transition-all duration-300 ease-in-out cursor-pointer '>
         <ScrollLink
             onClick={() => isNavOpen && handleToggleNav()}
             to='contact'
@@ -55,14 +55,14 @@ const Header = ({handleToggleNav, isNavOpen}) => {
       </ul>
 
       <div className='flex flex-col mt-16 w-full items-center text-center lg:hidden'>
-       <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0'>Sign up</Link>
-        <Link to={`/login`} className='rounded-md p-2 w-32 login'>Login</Link>
+       <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 hover:bg-green-400'>Use Bot</Link>
+        {/* <Link to={`/login`} className='rounded-md p-2 w-32 login'>Login</Link> */}
       </div>
     </nav>
 
     <nav aria-label='nav-header'>
         <ul className='leading-[4rem] lg:flex gap-[33px] text-center hidden'>
-            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-green-500 transition-all duration-300 ease-in-out  cursor-pointer'>
             <ScrollLink
                 to='#'
                 smooth={true} 
@@ -70,7 +70,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Home
             </ScrollLink>
             </li>
-            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-green-500 transition-all duration-300 ease-in-out  cursor-pointer'>
             <ScrollLink
                 to='features'
                 smooth={true} 
@@ -78,7 +78,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
                 Features
             </ScrollLink>
             </li>
-            <li className='nav-desktop lg:hover:text-primary-green transition-all duration-300 ease-in-out  cursor-pointer'>
+            <li className='nav-desktop lg:hover:text-green-500 transition-all duration-300 ease-in-out  cursor-pointer'>
             <ScrollLink
                 to='contact'
                 smooth={true} 
@@ -89,12 +89,11 @@ const Header = ({handleToggleNav, isNavOpen}) => {
         </ul> 
     </nav>
 
-    <div className='lg:flex flex-col mt-10 w-full items-center lg:mt-0 lg:w-fit lg:flex-row lg:gap-4 text-center hidden'>
-      <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 hover:bg-green-400 active:translate-y-4 transition-all duration-300 ease-in-out'>Sign up</Link>
-      <Link to={`/login`} className='transition-all duration-300 rounded-md p-2 w-32 login active:translate-x-4'>Login</Link>
+    <div className='lg:flex flex-row mt-10 w-full  lg:mt-0 lg:w-fit  hover:bg-green-400 active:translate-y-4 transition-all duration-300 ease-in-out bg-primary-green text-white justify-center rounded-md items-center py-2 px-8  hidden'>
+      <Link to={`/signup`}className='text-white '>Let's go!</Link>
     </div>
   </header>
   );
 };
 
-export default Header
+export default Header;
