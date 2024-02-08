@@ -46,7 +46,7 @@ const Signup = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black  outline-none md:w-[270px] border border-primary-green'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green'
               placeholder= 'Techmad'
             />
           </div>
@@ -60,21 +60,17 @@ const Signup = () => {
               value={formData.department}
               onChange={handleChange}
               required
-              className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black outline-none md:w-[270px] border border-primary-green'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px]  outline-none md:w-[270px] border border-primary-green'
               placeholder='Computer Science'
             />
          </div>
 
           <button type="submit" className='bg-primary-green p-4 text-white text-center w-[190px] h-[54px]text-[20px] font-medium rounded-[10px] border-none md:w-[228px] hover:bg-green-400 transition-all duration-300 mt-12' >Let's go!</button>
-         
-        
-          {/* <input type="email" id="email" name="email" placeholder="Name.eg 'Techmad'" required  className='pl-4 w-[232px] h-[53px] rounded-[10px] placeholder:text-black mt-5 outline-none md:w-[270px]' onChange={handleChange}/> */}
-          
         </form>
-        {/* <p className='text-white pt-5'>Already Signed up? <Link to={`/login`}><span className='text-green-300 hover:text-cyan-200'>Login</span></Link></p> */}
+      
       </div>
       <div className="back-to-landing flex  m-4">
-        <Link to="/" className="landing-link "><IoIosArrowBack className='text-primary-green text-4xl '  /></Link>
+        <Link to="/" className="landing-link "><IoIosArrowBack className='text-primary-green text-3xl '  /></Link>
       </div>
     </div>
   );
