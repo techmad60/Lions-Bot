@@ -13,11 +13,13 @@ const SignInPage = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    const formattedValue = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
     setFormData(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: formattedValue
     }));
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,7 +34,7 @@ const SignInPage = () => {
     // Check if the input name matches "Techmad" in any case or format
     if (formData.name.toLowerCase() === "techmad") {
       // Display alert if the input name is "Techmad"
-      alert(" You lie!! 🙅There can be only one Techmad");
+      alert(" You lie!!, 🙅 There can be only one Techmad");
       return; // Stop further execution
     }
     
