@@ -17,7 +17,7 @@ const Content = () => {
             </p>
 
             <Link
-              to="/signup"
+              to="/signin"
               className="flex justify-center items-center  h-[49px] w-[218px] bg-primary-green text-center text-white rounded-[10px] mt-8 lg:mt-20 outline-0 border-[0px] hover:bg-green-400 active:translate-y-4 transition-all duration-300 ease-in-out mx-auto lg:mx-0"
               id="success"
             >

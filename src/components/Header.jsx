@@ -55,8 +55,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
       </ul>
 
       <div className='flex flex-col mt-16 w-full items-center text-center lg:hidden'>
-       <Link to={`/signup`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 hover:bg-green-400'>Use Bot</Link>
-        {/* <Link to={`/login`} className='rounded-md p-2 w-32 login'>Login</Link> */}
+       <Link to={`/signin`}className='text-white bg-primary-green p-2 rounded-md w-32 mb-4 lg:mb-0 hover:bg-green-400'>Sign in</Link>
       </div>
     </nav>
 
@@ -90,7 +89,7 @@ const Header = ({handleToggleNav, isNavOpen}) => {
     </nav>
 
     <div className='lg:flex flex-row mt-10 w-full  lg:mt-0 lg:w-fit  hover:bg-green-400 active:translate-y-4 transition-all duration-300 ease-in-out bg-primary-green text-white justify-center rounded-md items-center py-2 px-8  hidden'>
-      <Link to={`/signup`}className='text-white '>Let's go!</Link>
+      <Link to={`/signin`}className='text-white '>Sign in</Link>
     </div>
   </header>
   );
