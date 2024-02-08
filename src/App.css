@@ -14,56 +14,75 @@ button {
   outline: none;
   border: none;
 }
+
+
+
+.open {
+  display: flex;
+}
+img {
+  max-width: 100%;
+}
+
+.login {
+  border: 1px solid #176729;
+  
+}
+.login:hover {
+  border: 1px solid rgb(74, 222, 128);
+  color: rgb(74, 222, 128);
+  animation: transition-all duration-300;
+}
+
+.nav-desktop:hover {
+  border-bottom: 1px solid rgb(34, 197, 94);
+};
+
+
 .features {
-    position: relative;
-  
-  
-  }
+  position: relative;
+}
+.box-shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.features::before {
+  content: '';
+  background: url('/images/bg-mobile-features.svg');
+  position: absolute;
+  z-index: -1; 
+  height: 990px;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
   .features::before {
     content: '';
-    background: url('/images/bg-mobile-features.svg');
-    position: absolute;
-    z-index: -1; 
-    height: 990px;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
-
-  .open {
-    display: flex;
-  }
-  img {
-    max-width: 100%;
-  }
-
-  .login {
-    border: 1px solid #176729;
-    
-  }
-  .login:hover {
-    border: 1px solid rgb(74, 222, 128);
-    color: rgb(74, 222, 128);
-    animation: transition-all duration-300;
-  }
-  .signup {
-    position: relative;
-  }
-  .nav-desktop:hover {
-    border-bottom: 1px solid rgb(34, 197, 94);
-  };
-  
-  .signup::before {
-    content: '';
-    height: 20vh;
+    background-image: url('/images/bg-desktop-features.svg') ;
+    height: 950px;
     z-index: -1;
     width: 100%;
     position: absolute;
-    top: 38vh;
-    background-image: url('/images/bg-mobile-signup.svg') ;
-    background-repeat: no-repeat;
-  }
+    background-repeat: no-repeat
+  };
+}; 
+  @media screen and (min-width: 1024px) {
+
+  .features::before {
+    content: '';
+    background-image: url('/images/bg-desktop-features.svg') ;
+    height: 700px;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat
+  };
+}; 
   
-  .signup::after {
+  
+  /* .signup::after {
     content: '';
     background-color: #176729;
     height: 50vh;
@@ -71,9 +90,9 @@ button {
     width: 100%;
     position: absolute;
     top: 50vh;
-  }
+  } */
   
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
 
     .signup::before {
       content: '';
@@ -83,10 +102,10 @@ button {
       width: 100%;
       position: absolute;
       background-repeat: no-repeat;
-      /* background-color: red */
+     
     };
-  }; 
-  @media screen and (min-width: 1024px) {
+  };  */
+  /* @media screen and (min-width: 1024px) {
 
     .signup::before {
       content: '';
@@ -97,30 +116,6 @@ button {
       position: absolute;
       background-repeat: no-repeat;
     };
-  }; 
+  };  */
 
-  @media screen and (min-width: 768px) {
-
-    .features::before {
-      content: '';
-      background-image: url('/images/bg-desktop-features.svg') ;
-      height: 950px;
-      z-index: -1;
-      width: 100%;
-      position: absolute;
-      background-repeat: no-repeat
-    };
-  }; 
-   @media screen and (min-width: 1024px) {
-
-    .features::before {
-      content: '';
-      background-image: url('/images/bg-desktop-features.svg') ;
-      height: 700px;
-      z-index: -1;
-      width: 100%;
-      position: absolute;
-      background-repeat: no-repeat
-    };
-  }; 
-  
+ 
