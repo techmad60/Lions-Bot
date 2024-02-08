@@ -34,7 +34,7 @@ const SignInPage = () => {
     // Check if the input name matches "Techmad" in any case or format
     if (formData.name.toLowerCase() === "techmad") {
       // Display alert if the input name is "Techmad"
-      alert(" You lie!!, 🙅 There can be only one Techmad");
+      alert(" You lie!! 🙅 There can be only one Techmad.");
       return; // Stop further execution
     }
     
@@ -56,7 +56,7 @@ const SignInPage = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green placeholder:text-xs'
               placeholder='Techmad'
             />
           </div>
@@ -69,7 +69,7 @@ const SignInPage = () => {
               value={formData.department}
               onChange={handleChange}
               required
-              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green placeholder:text-xs'
               placeholder='Computer Science'
             />
           </div>
