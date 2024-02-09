@@ -10,7 +10,7 @@ const WelcomePage = () => {
 
   // Function to redirect to Tailwind CSS website
   const redirectToChatbot = () => {
-    window.location.href = 'https://bot.writesonic.com/share/bot/06eb07c2-ad12-4713-be1f-b232a0eb0d5b';
+    window.location.href = 'https://bot.writesonic.com/share/bot/af74e13f-6946-4d68-b144-0ac241939175';
   };
 
   return (
