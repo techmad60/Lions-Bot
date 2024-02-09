@@ -56,7 +56,7 @@ const SignInPage = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green placeholder:text-xs'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green placeholder:text-xs focus:border-green-500 transition-all duration-300'
               placeholder='Techmad'
             />
           </div>
@@ -69,7 +69,7 @@ const SignInPage = () => {
               value={formData.department}
               onChange={handleChange}
               required
-              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green placeholder:text-xs'
+              className='pl-4 w-[232px] h-[53px] rounded-[10px] outline-none md:w-[270px] border border-primary-green placeholder:text-xs focus:border-green-500 transition-all duration-300'
               placeholder='Computer Science'
             />
           </div>
