@@ -14,14 +14,15 @@ const WelcomePage = () => {
   };
 
   return (
-    <div className="welcome-page text-center font-poppins flex flex-col items-center justify-center p-4 min-h-screen">
-      <div className="text-center flex flex-col items-center justify-center p-4">
-        <h1 className="text-2xl font-semibold mt-8">
+    <div className="welcome-page text-center font-poppins flex flex-col items-center justify-center p-4 min-h-screen bg-primary-green">
+      <div className="text-center flex flex-col items-center justify-center p-4 bg-white rounded-[40px] w-[342px] lg:w-[572px]">
+      <img src="../images/Vector.svg" alt="logo" className='lg:my-[2px] bouncing-image'/>
+        <h1 className="text-[24px] font-semibold mt-8">
           Welcome, <span className="text-primary-green">{name}!</span>
         </h1>
-        <p className="text-xl font-semibold ">
-          <span>from </span>
-          <span className="text-primary-green">{department}</span> Department.
+        <p className="text-[24px] font-semibold ">
+          <span className='text-[24px] font-semibold'>from</span> <br />
+          <span className="text-primary-green text-[24px] font-semibold">{department}</span>
         </p>
 
         <p className="mt-12 text-slate-600">
@@ -35,12 +36,13 @@ const WelcomePage = () => {
         >
           Use Bot!
         </button>
-        <div className="justify-self-start self-start">
+        
+      </div>
+      <div className="justify-self-start self-start">
           <Link to="/signin">
             <IoIosArrowBack className="text-primary-green text-3xl" />
           </Link>
         </div>
-      </div>
     </div>
   );
 };
