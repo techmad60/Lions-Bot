@@ -15,14 +15,14 @@ const WelcomePage = () => {
 
   return (
     <div className="welcome-page text-center font-poppins flex flex-col items-center justify-center p-4 min-h-screen bg-primary-green">
-      <div className="text-center flex flex-col items-center justify-center p-4 bg-white rounded-[40px] w-[342px] lg:w-[572px]">
+      <div className="text-center flex flex-col items-center justify-center p-4 bg-white rounded-[40px] w-[342px] lg:w-[572px] py-12">
       <img src="../images/Vector.svg" alt="logo" className='lg:my-[2px] bouncing-image'/>
         <h1 className="text-[24px] font-semibold mt-8">
           Welcome, <span className="text-primary-green">{name}!</span>
         </h1>
         <p className="text-[24px] font-semibold ">
           <span className='text-[24px] font-semibold'>from</span> <br />
-          <span className="text-primary-green text-[24px] font-semibold">{department}</span>
+          <span className="text-primary-green text-[24px] font-semibold">{department}</span> Department
         </p>
 
         <p className="mt-12 text-slate-600">
@@ -31,16 +31,16 @@ const WelcomePage = () => {
 
         <button
           type="button"
-          className="bg-primary-green p-4 flex justify-center items-center text-white text-center w-[190px] h-[54px] text-[20px] font-medium rounded-[10px] border-none md:w-[228px] hover:bg-green-400 transition-all duration-300 mt-12"
+          className="bg-primary-green p-4 flex justify-center items-center text-white text-center w-[190px] h-[54px] text-[20px] font-medium rounded-[10px] border-none md:w-[228px] hover:bg-green-400 transition-all duration-300 mt-8"
           onClick={redirectToChatbot}
         >
           Use Bot!
         </button>
         
       </div>
-      <div className="justify-self-start self-start">
+      <div className="justify-self-start self-start mt-8">
           <Link to="/signin">
-            <IoIosArrowBack className="text-primary-green text-3xl" />
+            <IoIosArrowBack className="text-white text-3xl" />
           </Link>
         </div>
     </div>
